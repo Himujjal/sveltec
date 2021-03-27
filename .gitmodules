@@ -1,0 +1,7 @@
+[submodule "libs/zig-tree-sitter"]
+  path = libs/zig-tree-sitter
+  url = https://github.com/Himujjal/zig-tree-sitter.git
+
+[submodule "libs/tree-sitter-svelte"]
+  path = libs/tree-sitter-svelte
+  url = https://github.com/Himujjal/tree-sitter-svelte.git

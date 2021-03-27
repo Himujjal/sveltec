@@ -1,0 +1,4 @@
+zig-cache
+*.a
+a.out
+.gyro

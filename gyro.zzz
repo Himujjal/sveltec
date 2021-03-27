@@ -1,0 +1,28 @@
+pkgs:
+  args:
+    version: 0.0.1
+    description: Svelte compiler written with Zig
+    license: MIT
+    source_url: "https://github.com/Himujjal/sveltec"
+    tags:
+      compiler
+      library
+    root: args.zig
+    files:
+      build.zig
+      README.md
+      LICENSE
+deps:
+  tree-sitter:
+    src:
+      github:
+        user: Himujjal
+        repo: zig-tree-sitter
+        ref: master
+  tree-sitter-svelte:
+    src:
+      github:
+        user: Himujjal
+        repo: tree-sitter-svelte
+        ref: master
+    root: bindings/zig/parser.zig

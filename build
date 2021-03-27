@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+# LIBS="-L. ./src/zigts/libtree-sitter.a ./src/zigts/libtree-sitter-svelte.a"
+zig test libtree-sitter.a libtree-sitter-svelte.a src/main.zig
