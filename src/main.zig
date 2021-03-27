@@ -20,7 +20,7 @@ const ts_tree_root_node = TS.ts_tree_root_node;
 pub extern fn tree_sitter_svelte() ?*TSLanguage;
 pub extern fn free(__ptr: ?*c_void) void;
 
-pub fn main() !void {
+test "hello" {
     var parser: ?*TSParser = ts_parser_new();
     defer TS.ts_parser_delete(parser);
 
@@ -36,6 +36,6 @@ pub fn main() !void {
     const stdout = std.io.getStdOut().writer();
     try stdout.print("Syntax tree: {s}\n", .{string});
 
-    // testing.expect(add(3, 7) == 10);
+    testing.expect(add(3, 7) == 10);
 }
 

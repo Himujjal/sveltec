@@ -13,12 +13,6 @@ pkgs:
       README.md
       LICENSE
 deps:
-  tree-sitter:
-    src:
-      github:
-        user: Himujjal
-        repo: zig-tree-sitter
-        ref: master
   tree-sitter-svelte:
     src:
       github:
@@ -26,3 +20,10 @@ deps:
         repo: tree-sitter-svelte
         ref: master
     root: bindings/zig/parser.zig
+  tree-sitter:
+    src:
+      github:
+        user: Himujjal
+        repo: zig-tree-sitter
+        ref: master
+    root: src/lib.zig
